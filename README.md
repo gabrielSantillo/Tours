@@ -1,0 +1,1 @@
+This a travel website with only desktop layout

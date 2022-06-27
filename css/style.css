@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Garamond", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  place-items: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+#page-header {
+  display: grid;
+  height: 60px;
+  margin: 0px 10vw;
+  grid-auto-flow: column;
+  place-items: center;
+}
+#page-header > h1 {
+  justify-self: start;
+}
+#page-header > img {
+  width: 30px;
+  justify-self: end;
+}
+
+#page-main-first-section {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 2fr 3fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  height: 500px;
+  margin-bottom: 80px;
+}
+
+#page-main-first-section-div-one {
+  background-image: url(/img/beach-view.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#page-main-first-section-div-two {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 4fr 5fr;
+}
+#page-main-first-section-div-two > #page-main-first-section-div-two-title {
+  padding: 50px;
+}
+#page-main-first-section-div-two > #page-main-first-section-div-two-title > h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.page-main-first-section-div-two-detail {
+  background-color: black;
+  width: 20%;
+  height: 1px;
+}
+
+#page-main-first-section-div-two-pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+#page-main-first-section-div-two-pictures > #page-main-first-section-div-two-picture-one {
+  background-image: url(/img/aloha.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#page-main-first-section-div-two-pictures > #page-main-first-section-div-two-picture-two {
+  background-image: url(/img/surf.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#page-main-second-section {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 250px;
+  background-color: #d3ece7;
+}
+#page-main-second-section > h1 {
+  font-size: 2rem;
+  transform: translateY(20px);
+}
+#page-main-second-section > p {
+  transform: translateY(-20px);
+}
+
+#page-main-second-section-div {
+  width: 10%;
+  height: 2px;
+  background-color: black;
+}
+
+#page-main-second-section-submit {
+  transform: translateY(-20px);
+  display: grid;
+  grid-auto-flow: column;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+#page-main-second-section-submit > input {
+  border: none;
+  height: 40px;
+  width: 350px;
+}
+#page-main-second-section-submit > input::-moz-placeholder {
+  color: rgb(188, 188, 188);
+  padding: 5px;
+}
+#page-main-second-section-submit > input:-ms-input-placeholder {
+  color: rgb(188, 188, 188);
+  padding: 5px;
+}
+#page-main-second-section-submit > input::placeholder {
+  color: rgb(188, 188, 188);
+  padding: 5px;
+}
+#page-main-second-section-submit > button {
+  width: 120px;
+  border: none;
+  background-color: #f1c8b2;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+#page-main-second-section-submit > button:hover {
+  cursor: pointer;
+}
+
+#page-main-three-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin-top: 80px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 20px;
+}
+
+#page-main-three-section-div-one {
+  display: grid;
+}
+#page-main-three-section-div-one > h1 {
+  font-size: 2rem;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+#page-main-three-section-detail {
+  background-color: #f7e0d4;
+  width: 80%;
+  height: 15px;
+}
+
+#page-main-three-section-div-three {
+  display: grid;
+  row-gap: 20px;
+}
+
+#page-main-four-section {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+#page-main-three-section-pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin: 80px 2.5vw 0;
+  column-gap: 20px;
+}
+#page-main-three-section-pictures > #page-main-three-section-picture-one {
+  background-image: url(/img/houses.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+#page-main-three-section-pictures > #page-main-three-section-picture-two {
+  background-image: url(/img/houses-2.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+#page-main-three-section-pictures > #page-main-three-section-picture-three {
+  background-image: url(/img/houses-3.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+#page-main-three-section-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin: 0 2.5vw;
+  place-items: center;
+}
+#page-main-three-section-articles > #page-main-three-section-article-one {
+  display: grid;
+  row-gap: 15px;
+  margin: 0 7.5%;
+  padding: 10px;
+  height: 100%;
+  background-color: #f7e0d4;
+  z-index: 2;
+  transform: translateY(-20px);
+}
+#page-main-three-section-articles > #page-main-three-section-article-one > div {
+  width: 20%;
+  height: 1px;
+  background-color: black;
+}
+#page-main-three-section-articles > #page-main-three-section-article-two {
+  display: grid;
+  row-gap: 15px;
+  margin: 0 7.5%;
+  padding: 10px;
+  height: 100%;
+  background-color: #d7ecfa;
+  z-index: 2;
+  transform: translateY(-20px);
+}
+#page-main-three-section-articles > #page-main-three-section-article-two > div {
+  width: 20%;
+  height: 1px;
+  background-color: black;
+}
+#page-main-three-section-articles > #page-main-three-section-article-three {
+  display: grid;
+  row-gap: 15px;
+  margin: 0 7.5%;
+  padding: 10px;
+  height: 100%;
+  background-color: #d3ece7;
+  z-index: 2;
+  transform: translateY(-20px);
+}
+#page-main-three-section-articles > #page-main-three-section-article-three > div {
+  width: 20%;
+  height: 1px;
+  background-color: black;
+}
+
+#page-main-fifth-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 80px 5vw 0;
+  place-items: center;
+  text-align: center;
+}
+#page-main-fifth-section > div > h1 {
+  font-size: 4rem;
+}
+
+#page-main-sixth-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  height: 340px;
+  margin: 120px 5vw 0;
+}
+
+#page-main-sixth-section-picture-one {
+  background-image: url(/img/turtle.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#page-main-sixth-section-picture-two {
+  background-image: url(/img/surfing.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#page-main-sixth-section-picture-three {
+  background-image: url(/img/flamingo.jpg);
+  background-size: cover;
+  background-position: start;
+}
+
+#page-main-sixth-section-picture-four {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 4fr;
+}
+#page-main-sixth-section-picture-four > div {
+  width: 20%;
+  height: 1px;
+  background-color: black;
+}
+#page-main-sixth-section-picture-four > #page-main-sixth-section-picture-four {
+  transform: translateY(20px);
+}
+#page-main-sixth-section-picture-four > p {
+  justify-self: start;
+  margin: 0 10vw 0 0;
+}
+
+#page-main-seventh-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 300px;
+  margin-top: 80px;
+}
+#page-main-seventh-section > #page-main-seventh-section-color-div {
+  background-color: #d3ece7;
+  width: 10%;
+  height: 80%;
+  justify-self: center;
+}
+
+#page-main-seventh-section-article {
+  display: grid;
+  margin: 40px 35vw 0 0;
+}
+#page-main-seventh-section-article > div {
+  background-color: black;
+  width: 20%;
+  height: 1px;
+  transform: translateY(-30px);
+}
+#page-main-seventh-section-article > p {
+  transform: translateY(-40px);
+  line-height: 25px;
+}
+
+#page-main-eighth-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 80px;
+}
+
+#page-main-eighth-section-picture {
+  background-image: url(/img/suitcase.jpg);
+  width: 70%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+  justify-self: end;
+}
+
+#page-main-eighth-section-article {
+  padding: 20px;
+  height: 70%;
+  width: 50%;
+  z-index: 2;
+  display: grid;
+  background-color: #f7e0d4;
+  transform: translateY(25px) translateX(-50px);
+}
+#page-main-eighth-section-article > div {
+  width: 20%;
+  background-color: black;
+  height: 1px;
+}
+#page-main-eighth-section-article > #page-main-eighth-section-article-one {
+  transform: translateY(15px);
+}
+#page-main-eighth-section-article > #page-main-eighth-section-article-two {
+  transform: translateY(-15px);
+}
+#page-main-eighth-section-article > h1 {
+  font-size: 1.9rem;
+}
+
+#page-main-ninth-section {
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
+}
+
+#page-footer {
+  margin-top: 80px;
+  display: grid;
+  place-items: center;
+  background-color: rgb(49, 49, 49);
+  height: 60px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
